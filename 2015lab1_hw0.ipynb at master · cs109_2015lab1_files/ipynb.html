@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0425)https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&nwo=cs109%2F2015lab1&path=hw0.ipynb&repository_id=41822876&repository_type=Repository#a624f82b-db75-42ce-b20e-e3cd8f65d1e6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Render</title>
+  <meta name="referrer" content="never">
+    <script async="" src="./analytics.js"></script><script src="./ipynb-169ff3b5c71fa0b0b7540a856e888ae5.js"></script><link rel="stylesheet" href="./ipynb-c47447281494c3bc673c27fa8fa55be4.css">
+
+
+</head>
+<body class="" data-render-url="https://render.githubusercontent.com" data-github-hostname="github.com" style="">
+  <div class="render-shell js-render-shell" data-document-nwo="cs109/2015lab1" data-document-commit="850463e4fadc169668dd7a992bdf31add21217f0" data-document-path="hw0.ipynb" data-file="https://github-render.s3.amazonaws.com/prod/6dfccdf7a0b10c4548ed653040b6da0e-render.html?AWSAccessKeyId=AKIAJILR36AMCOMBK3MQ&amp;Signature=uSwU6qiCixsJ/rcfgj3ysC2g%2BRw%3D&amp;Expires=1520953506" data-meta="https://github-render.s3.amazonaws.com/prod/6dfccdf7a0b10c4548ed653040b6da0e-meta.json?AWSAccessKeyId=AKIAJILR36AMCOMBK3MQ&amp;Signature=x1f065sUqO50kjlk0A5aCCLimWQ%3D&amp;Expires=1520953506">
+    
+
+<div class="render-info">
+  <div class="js-viewer-health render-health is-viewer-good">
+    <span class="symbol">⊖</span>
+    <span class="js-message message">Everything running smoothly!</span>
+  </div>
+</div>
+
+<div id="notebook" class="js-html">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>Homework 0<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Homework-0">¶</a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Survey due 4th September, 2015<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Survey-due-4th-September,-2015">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Submission due 10th September, 2015<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Submission-due-10th-September,-2015">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p>Welcome to CS109 / STAT121 / AC209 / E-109 (<a href="http://cs109.org/">http://cs109.org/</a>).  In this class, we will be using a variety of tools that will require some initial configuration. To ensure everything goes smoothly moving forward, we will setup the majority of those tools in this homework. <strong>It is very important that you do this setup as soon as possible</strong>. While some of this will likely be dull, doing it now will enable us to do more exciting work in the weeks that follow without getting bogged down in further software configuration. You will also be filling out a <strong>mandatory class survey and creating a github and AWS account, which are mandatory as well</strong>.</p>
+<p>Please note that the <strong>survey is due on September 4th</strong>. The reason is that we need your github account name to set you up for the homework submission system. If you do not submit the survey on time you might not be able to submit the homework in time.</p>
+<p>This homework will not be graded, however, you <strong>must submit it</strong>. Submission instructions, along with the github flow for homework, are at the end of this notebook. The practice you will get submitting this homework will be essential for the submission of the forthcoming homework notebooks and your project.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>Table of Contents<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Table-of-Contents">¶</a>
+</h1>
+<ul>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Homework-0">Homework 0</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Survey-due-4th-September,-2015">Survey due 4th September, 2015</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Submission-due-10th-September,-2015">Submission due 10th September, 2015</a></li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#First-Things">First Things</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Create-your-github-account">1. Create your github account</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Class-Survey">2. Class Survey</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#3.-Piazza">3. Piazza</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#4.-Programming-expectations">4. Programming expectations</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#5.-If-you-do-not-have-a-.edu-email-address">5. If you do not have a .edu email address</a></li>
+</ul>
+</li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Getting-and-installing-Python">Getting and installing Python</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Installing-Anaconda">Installing Anaconda</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Mac/Linux-users">Mac/Linux users</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Windows-Users">Windows Users</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Setting-up-your-git-environment">Setting up your git environment</a><ul>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Installing-git">1. Installing git</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Windows-specific-notes">Windows specific notes</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Mac-specific-notes">Mac specific notes</a></li>
+</ul>
+</li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Optional:-Creating-ssh-keys-on-your-machine">2. Optional: Creating ssh keys on your machine</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#3.--Optional:-Uploading-ssh-keys-and-Authentication">3.  Optional: Uploading ssh keys and Authentication</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#4.-Setting-global-config-for-git">4. Setting global config for git</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#5.-Github-tutorial">5. Github tutorial</a></li>
+</ul>
+</li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Sign-up-for-AWS">Sign up for AWS</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Get-an-AWS-account">1. Get an AWS account</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Sign-up-for-AWS-educate">2. Sign up for AWS educate</a></li>
+</ul>
+</li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello,-Python">Hello, Python</a></li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Python-Libraries">Python Libraries</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Installing-additional-libraries">Installing additional libraries</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Testing-latest-libraries">Testing latest libraries</a></li>
+</ul>
+</li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Kicking-the-tires">Kicking the tires</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-World">Hello World</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-matplotlib">Hello matplotlib</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-Numpy">Hello Numpy</a></li>
+</ul>
+</li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#The-Monty-Hall-Problem">The Monty Hall Problem</a></li>
+<li>
+<a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#The-workflow-for-homeworks-and-labs">The workflow for homeworks and labs</a><ul>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#getting-and-working-on-labs">getting and working on labs</a></li>
+<li><a href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#getting-and-submitting-homework">getting and submitting homework</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>First Things<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#First-Things">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I cant stress this enough: <strong>Do this setup now!</strong></p>
+<p>These first things are incredibly important. You must absolutely fill these out to get into the swing of things...</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>1. Create your github account<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Create-your-github-account">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you do not have a github account as yet, create it at:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/">https://github.com</a></p>
+<p>This step is <strong>mandatory</strong>. We will need your github username. We are using github for all aspects of this course, including</p>
+<ul>
+<li>doing and submitting homework</li>
+<li>collaborating on your project</li>
+<li>creating your web site</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To sign up for an account, just go to <a href="https://github.com/">github</a> and pick a unique username, an email address, and a password. Once you've done that, your github page will be at <a href="https://github.com/your-username">https://github.com/your-username</a>.</p>
+<p>Github also provides a student <a href="https://education.github.com/pack">developer package</a>. This is something that might be nice to have, but it is not necessary for the course. Github may take some time to approve your application for the package. Please note that this is optional and you do not have to have the package approved to fill out the survey.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>2. Class Survey<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Class-Survey">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, you <strong>must complete the mandatory</strong> course survey located <a href="http://goo.gl/forms/bJwajS8zO8">here</a>. It should only take a few moments of your time. Once you fill in the survey we will use the github username you provided to sign you up into the <code>cs109-students</code> organization on github. (see <a href="https://help.github.com/articles/how-do-i-access-my-organization-account/">https://help.github.com/articles/how-do-i-access-my-organization-account/</a>) It is imperative that you fill out the survey on time as we use the provided information to sign you in: your access to the homework depends on being in this organization.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>3. Piazza<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#3.-Piazza">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Go to <a href="https://piazza.com/harvard/fall2015/cs109/home">Piazza</a> and sign up for the class using your Harvard e-mail address. If you do not have a Harvard email address write an email to staff@cs109.org and one of the TFs will sign you up.</p>
+<p>You will use Piazza as a forum for discussion, to find team members, to arrange appointments, and to ask questions. Piazza should be your primary form of communication with the staff. Use the staff e-mail (staff@cs109.org) only for individual requests, e.g., to excuse yourself from mandatory sections. All announcements, homework, and project descriptions will be posted on Piazza first.</p>
+<p><strong>Introduction</strong></p>
+<p>Once you are signed up to the Piazza course forum, introduce yourself to your classmates and course staff with a follow-up post in the introduction thread. Include your name/nickname, your affiliation, why you are taking this course, and tell us something interesting about yourself (e.g., an industry job, an unusual hobby, past travels, or a cool project you did, etc.). Also tell us whether you have experience with data science.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>4. Programming expectations<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#4.-Programming-expectations">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>All the assignments and labs for this class will use Python and, for the most part, the browser-based IPython notebook format you are currently viewing. Knowledge of Python is not a prerequisite for this course, <strong>provided you are comfortable learning on your own as needed</strong>. While we have strived to make the programming component of this course straightforward, we will not devote much time to teaching prorgramming or Python syntax. Basically, you should feel comfortable with:</p>
+<ul>
+<li>How to look up Python syntax on Google and StackOverflow.</li>
+<li>Basic programming concepts like functions, loops, arrays, dictionaries, strings, and if statements.</li>
+<li>How to learn new libraries by reading documentation.</li>
+<li>Asking questions on StackOverflow or Piazza.</li>
+</ul>
+<p>There are many online tutorials to introduce you to scientific python programming. <a href="https://github.com/jrjohansson/scientific-python-lectures">Here is a course</a> that is very nice. Lectures 1-4 of this course are most relevant to this class. While we will cover some python programming in labs 1 and 2, we expect you to pick it up on the fly.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>5. If you do not have a .edu email address<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#5.-If-you-do-not-have-a-.edu-email-address">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Please get one, as you will need it to sign up for AWS educate, and if you want to sign up for the student developer github package you will need it as well. As a DCE student you are eligible for a FAS account and you can sign up <a href="http://www.extension.harvard.edu/resources-policies/resources/computer-e-mail-services">here</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Getting and installing Python<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Getting-and-installing-Python">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You will be using Python throughout the course, including many popular 3rd party Python libraries for scientific computing. <a href="http://continuum.io/downloads">Anaconda</a> is an easy-to-install bundle of Python and most of these libraries. We <strong>strongly</strong> recommend that you use Anaconda for this course. If you insist on using your own Python setup instead of Anaconda, we will not provide any installation support, and are not responsible for you loosing points on homework assignments in case of inconsistencies.</p>
+<p>For this course we are using <strong>Python 2</strong>, not <strong>Python 3</strong>.</p>
+<p>Also see: <a href="http://docs.continuum.io/anaconda/install">http://docs.continuum.io/anaconda/install</a></p>
+<p>The <strong>IPython</strong> or <strong>Jupyter</strong> notebook runs in the browser, and works best in Google Chrome or Safari for me. You probably want to use one of these for assignments in this course.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Installing Anaconda<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Installing-Anaconda">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Anaconda Python distribution is an easily-installable bundle of Python and many of the libraries used throughout this class. Unless you have a good reason not to, we recommend that you use Anaconda.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Mac/Linux users<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Mac/Linux-users">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Download the <a href="http://continuum.io/downloads">appropriate version</a> of Anaconda</li>
+<li>Follow the instructions on that page to run the installer</li>
+<li>Test out the IPython notebook: open a Terminal window, and type <code>ipython notebook</code>. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up. </li>
+<li>Click <code>New Notebook</code> to create a new notebook file. <strong>Trick</strong>: give this notebook a unique name, like <code>my-little-rose</code>. Use Spotlight (upper right corner of the mac desktop, looks like a maginifier) to search for this name. In this way, you will know which folder your notebook opens in by default.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Windows Users<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Windows-Users">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Download the <a href="http://continuum.io/downloads">appropriate version</a> of Anaconda</li>
+<li>Follow the instructions on that page to run the installer. This will typically create a directory at <code>C:\Anaconda</code>
+</li>
+<li>Test it out: start the Anaconda launcher, which you can find in <code>C:\Anaconda</code> or, in the Start menu. Start the IPython notebook. A new browser window should open. </li>
+<li>Click <code>New Notebook</code>, which should open a new page. <strong>Trick</strong>: give this notebook a unique name, like <code>my-little-rose</code>. Use Explorer (usually start menu on windows desktops) to search for this name. In this way, you will know which folder your notebook opens in by default.</li>
+</ol>
+<p>If you did not add Anaconda to your path, be sure to use the full path to the python and ipython executables, such as <code>/anaconda/bin/python</code>.</p>
+<p>If you already have installed Anaconda at some point in the past, you can easily update to the latest Anaconda version by updating conda, then Anaconda as follows:</p>
+
+<pre><code>conda update conda
+conda update anaconda</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Troubleshooting<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Troubleshooting">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You must be careful to make sure you are running the Anaconda version of python, since those operating systems come preinstalled with their own versions of python.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.7.9 (default, Dec 10 2014, 12:24:55) [MSC v.1500 32 bit (Intel)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem</strong>
+When you start python, you don't see a line like <code>Python 2.7.5 |Anaconda 1.6.1 (x86_64)|</code>. You are using a Mac or Linux computer</p>
+<p><strong>Reason</strong>
+You are most likely running a different version of Python, and need to modify your Path (the list of directories your computer looks through to find programs).</p>
+<p><strong>Solution</strong>
+Find a file like <code>.bash_profile</code>, <code>.bashrc</code>, or <code>.profile</code>. Open the file in a text editor, and add a line at this line at the end: <code>export PATH="$HOME/anaconda/bin:$PATH"</code>. Close the file, open a new terminal window, type <code>source ~/.profile</code> (or whatever file you just edited). Type <code>which python</code> -- you should see a path that points to the anaconda directory. If so, running <code>python</code> should load the proper version</p>
+<p>If this doesn't work (typing <code>which python</code> doesn't point to anaconda), you might be using a different shell. Type <code>echo $SHELL</code>. If this isn't <code>bash</code>, you need to edit a different startup file (for example, if if <code>echo $SHELL</code> gives <code>$csh</code>, you need to edit your <code>.cshrc</code> file. The syntax for this file is slightly different: <code>set PATH = ($HOME/anaconda/bin $PATH)</code></p>
+<hr>
+<p><strong>Problem</strong>
+You are running the right version of python (see above item), but are unable to import numpy.</p>
+<p><strong>Reason</strong>
+You are probably loading a different copy of numpy that is incompatible with Anaconda</p>
+<p><strong>Solution</strong>
+See the above item to find your <code>.bash_profile</code>, <code>.profile</code>, or <code>.bashrc</code> file. Open it, and add the line <code>unset PYTHONPATH</code> at the end. Close the file, open a new terminal window, type <code>source ~/.profile</code> (or whatever file you just edited), and try again.</p>
+<hr>
+<p><strong>Problem</strong>
+Under Windows, you receive an error message similar to the following: "'pip' is not recognized as an internal or external command, operable program or batch file."</p>
+<p><strong>Reason</strong>
+The correct Anaconda paths might not be present in your PATH variable, or Anaconda might not have installed correctly.</p>
+<p><strong>Solution</strong>
+Ensure the Anaconda directories to your path environment variable ("\Anaconda" and "\Anaconda\Scripts").  See <a href="http://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them">this page</a> for details.</p>
+<p>If this does not correct the problem, reinstall Anaconda.</p>
+<p><strong>IF YOU ARE STILL HAVING ISSUES ON THE INSTALL, POST TO PIAZZA. WE'LL HELP YOU THERE. OR ASK IN YOUR SECTION</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Setting up your git environment<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Setting-up-your-git-environment">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>1. Installing git<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Installing-git">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will be using the command line version of git.</p>
+<p>On linux, install git using your system package manager (yum, apt-get, etc)</p>
+<p>On the Mac, if you ever installed Xcode, you should have git installed. Or you might have installed it using <code>homebrew</code>. Either of these are fine as long as the git version is greater than 2.0</p>
+<p>Otherwise, on Mac and Windows, go to <a href="http://git-scm.com/">http://git-scm.com</a>. Accept all defaults in the installation process. On Windows, installing git will also install for you a minimal unix environment with a "bash" shell and terminal window. Voila, your windows computer is transformed into a unixy form.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4>Windows specific notes<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Windows-specific-notes">¶</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There will be an installer <code>.exe</code> file you need to click. Accept all the defaults.</p>
+<p>Here is a screenshot from one of the defaults. It makes sure you will have the "bash" tool talked about earlier.
+<img src="./wgi-git-bash.png" alt="use git bash"></p>
+<p>Choose the default line-encoding conversion:
+<img src="./wgi-defaultlines.png" alt="default lines"></p>
+<p>Use the terminal emulator they provide, its better than the one shipped with windows.
+<img src="./wgi-usemintty.png" alt="use mintty"></p>
+<p>Towards the end, you might see a message like this. It looks scary, but all you need to do is click "Continue"
+<img src="./wgi-scarymessage.png" alt="scary message"></p>
+<p>At this point you will be installed. You can bring up "git bash" either from your start menu, or from the right click menu on any folder background. When you do so, a terminal window will open. This terminal is where you will issue further git setup commands, and git commands in general.</p>
+<p>Get familiar with the terminal. It opens in your home folder, and maps <code>\\</code> paths on windows to more web/unix like paths with '/'. Try issuing the commands <code>ls</code>, <code>pwd</code>, and <code>cd folder</code> where folder is one of the folders you see when you do a ls. You can do a <code>cd ..</code> to come back up.</p>
+<p>You can also use the terminal which comes with the ipython notebook. More about that later.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4>Mac specific notes<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Mac-specific-notes">¶</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As mentioned earlier, if you ever installed Xcode or the "Command Line Developer tools", you may already have git.
+Make sure its version 2.0 or higher. (<code>git --version</code>)</p>
+<p>Or if you use <strong>Homebrew</strong>, you can install it from there. The current version on homebrew is 2.4.3
+ You dont need to do anyting more in this section.</p>
+<hr>
+<p>First click on the <code>.mpkg</code> file that comes when you open the downloaded <code>.dmg</code> file.</p>
+<p>When I tried to install git on my mac, I got a warning saying my security preferences wouldnt allow it to be installed. So I opened my system preferences and went to "Security".</p>
+<p><img src="./mac-git-security.png" alt="system pref"></p>
+<p>Here you must click "Open Anyway", and the installer will run.</p>
+<p>The installer puts git as <code>/usr/local/git/bin/git</code>. Thats not a particularly useful spot. Open up <code>Terminal.app</code>.Its usually in <code>/Applications/Utilities</code>. Once the terminal opens up, issue</p>
+<p><code>sudo ln -s /usr/local/git/bin/git /usr/local/bin/git</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Keep the Terminal application handy in your dock. (You could also download and use iTerm.app, which is a nicer terminal, if you are into terminal geekery). We'll be using the terminal extensively for git. You can also use the terminal which comes with the ipython notebook. More about that later.</p>
+<p>Try issuing the commands <code>ls</code>, <code>pwd</code>, and <code>cd folder</code> where folder is one of the folders you see when you do a ls. You can do a <code>cd ..</code> to come back up.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>2. Optional: Creating ssh keys on your machine<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Optional:-Creating-ssh-keys-on-your-machine">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This ia an optional step. But it makes things much easier.</p>
+<p>There are two ways git talks to github: https, which is a web based protocol</p>
+<p><img src="./github-https-clone.png" alt="github https"></p>
+<p>or over ssh</p>
+<p><img src="./github-ssh-clone.png" alt="github ssh"></p>
+<p>Which one you use is your choice. I recommend ssh, and the github urls in this homework and in labs will be ssh urls.
+Every time you contact your upstream repository (hosted on github), you need to prove you're you. You <em>can</em> do this with passwords over HTTPS, but it gets old quickly. By providing an ssh public key to github, your ssh-agent will handle all of that for you, and you wont have to put in any passwords.</p>
+<p>At your terminal, issue the command (skip this if you are a seasoned ssh user and already have keys):</p>
+<p><code>ssh-keygen -t rsa</code></p>
+<p>It will look like this:
+<img src="./sshkeygen.png" alt="github ssh keygen"></p>
+<p>Accept the defaults. When it asks for a passphrase for your keys, put in none. (you can put in one if you know how to set up a ssh-agent).</p>
+<p>This will create two files for you, in your home folder if you accepted the defaults.</p>
+
+</div>
+</div>
+</div>➜  ~  ls .ssh/id_rsa*
+.ssh/id_rsa     .ssh/id_rsa.pub
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>id_rsa</code> is your PRIVATE key. NEVER NEVER NEVER give that to anyone. <code>id_rsa.pub</code> is your public key. You must supply this to github.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>3.  Optional: Uploading ssh keys and Authentication<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#3.--Optional:-Uploading-ssh-keys-and-Authentication">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To upload an ssh key, log in to github and click on the gear icon in the top right corner (settings). Once you're there, click on "SSH keys" on the left. This page will contain all your ssh keys once you upload any.</p>
+<p>Click on "add ssh key" in the top right. You should see this box:</p>
+<p><img src="./github_ssh.png" alt="github ssh" style="width: 500px;"></p>
+<p>The title field should be the name of your computer or some other way to identify this particular ssh key.</p>
+<p>In the key field, you'll need to copy and paste your <em>public</em> key. <strong>Do not paste your private ssh key here.</strong></p>
+<p>When you hit "Add key", you should see the key name and some hexadecimal characters show up in the list. You're set.</p>
+<p>Now, whenever you clone a repository using this form:</p>
+<p><code>$ git clone git@github.com:rdadolf/ac297r-git-demo.git</code>,</p>
+<p>you'll be connecting over ssh, and will not be asked for your github password</p>
+<p>You will need to repeat steps 2 and 3 of the setup for each computer you wish to use with github.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>4. Setting global config for git<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#4.-Setting-global-config-for-git">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Again, from the terminal, issue the command</p>
+<p><code>git config --global user.name "YOUR NAME"</code></p>
+<p>This sets up a name for you. Then do</p>
+<p><code>git config --global user.email "YOUR EMAIL ADDRESS"</code></p>
+<p>Use the <strong>SAME</strong> email address you used in setting up your github account.</p>
+<p>These commands set up your global configuration. On my Mac, these are stored in the text file <code>.gitconfig</code> in my home folder.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>5. Github tutorial<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#5.-Github-tutorial">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Read our git and github tutorial from <a href="https://github.com/cs109/2015lab1/blob/master/Lab1-git.ipynb">Lab 1</a>. Then come back here.</p>
+<p>If you have any issues or questions: Ask us! On Piazza or in Sections!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Sign up for AWS<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Sign-up-for-AWS">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the course you need to sign up for Amazon Web Services (AWS).</p>
+<ul>
+<li>The sign up process has two steps:<ol>
+<li>Get an AWS account</li>
+<li>Sign up for AWS educate</li>
+</ol>
+</li>
+</ul>
+<p>The AWS account will enable you to access Amazon's webservices. The AWS educate sign up will provide you with $100 worth of free credits.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>1. Get an AWS account<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#1.-Get-an-AWS-account">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: You can skip this step if you already have an account.</p>
+<ul>
+<li>Go to <a href="https://aws.amazon.com/education/awseducate/apply/">this webpage</a>
+</li>
+<li>Click on the yellow box in the upper right corner saying "Create an AWS account"</li>
+<li>Follow the normal instructions and fill in all necessary information to create your account.</li>
+</ul>
+<p>Once you have an account you need your account ID. The account ID is a 12 digit number. 
+Please follow <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html">this description</a> to find your ID in the Support menu of your AWS console.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>2. Sign up for AWS educate<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#2.-Sign-up-for-AWS-educate">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note: You will need your 12 digit AWS account ID for this step.</p>
+<ul>
+<li>Go to <a href="https://aws.amazon.com/education/awseducate/apply/">this webpage</a>
+</li>
+<li>Click on the right on the button saying "Apply for AWS Educate for Students"</li>
+<li>Confirm that you are a student</li>
+<li>Fill out the form</li>
+<li>
+<strong>Note that that you provide should come from your institution, which means it should end in .edu</strong> </li>
+<li>It might take a few days for your request to be approved. </li>
+</ul>
+<p>Once again, ping us if you need help!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Hello, Python<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello,-Python">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The IPython/Jupyter notebook is an application to build interactive computational notebooks. You'll be using them to complete labs and homework. Once you've set up Python, please download this page, and open it with IPython by typing</p>
+
+<pre><code>ipython notebook &lt;name_of_downloaded_file&gt;</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also open the notebook in any folder by <code>cd</code>ing to the folder in the terminal, and typing</p>
+
+<pre><code>ipython notebook .</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>in that folder.</p>
+<p>The anaconda install also probably dropped a launcher on your desktop. You can use the launcher, and select "ipython notebbok" or "jupyter notebook" from there. In this case you will need to find out which folder you are running in.</p>
+<p>It loolks like this for me:</p>
+<p><img src="./jupyter.png" alt="jupyter"></p>
+<p>Notice that you can use the user interface to create new folders and text files, and even open new terminals, all of which might come useful to you. To create a new notebook, you can use "Python 2" under notebooks. You may not have the other choices available (I have julia for example, which is another language that uses the same notebook interface).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the rest of the assignment, use your local copy of this page, running on IPython.</p>
+<p>Notebooks are composed of many "cells", which can contain text (like this one), or code (like the one below). Double click on the cell below, and evaluate it by clicking the "play" button above, for by hitting shift + enter</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">"Item is "</span><span class="p">,</span> <span class="n">item</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Item is  10
+Item is  20
+Item is  30
+Item is  40
+Item is  50
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Python Libraries<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Python-Libraries">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Installing additional libraries<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Installing-additional-libraries">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Anaconda includes most of the libraries we will use in this course, but you will need to install a few extra ones for the beginning of this course:</p>
+<ol>
+<li><a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></li>
+<li><a href="http://web.stanford.edu/~mwaskom/software/seaborn/">Seaborn</a></li>
+<li><a href="https://pythonhosted.org/pyquery/">PyQuery</a></li>
+</ol>
+<p>The recommended way to install these packages is to run</p>
+<p><code>!pip install BeautifulSoup seaborn pyquery</code></p>
+<p>in a code cell in the ipython notebook you just created. On windows, you might want to run <code>pip install BeautifulSoup seaborn pyquery</code> on the <code>git-bash.exe</code> terminal (note, the exclamation goes away).</p>
+<p>If this doesn't work, you can download the source code, and run <code>python setup.py install</code> from the source code directory. On Unix machines(Mac or Linux), either of these commands may require <code>sudo</code> (i.e. <code>sudo pip install...</code> or <code>sudo python</code>)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you've successfully completed the above install, all of the following statements should run.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Testing latest libraries<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Testing-latest-libraries">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#IPython is what you are using now to run the notebook</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="k">print</span> <span class="s2">"IPython version:      </span><span class="si">%6.6s</span><span class="s2"> (need at least 3.0.0)"</span> <span class="o">%</span> <span class="n">IPython</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># Numpy is a library for working with Arrays</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="k">print</span> <span class="s2">"Numpy version:        </span><span class="si">%6.6s</span><span class="s2"> (need at least 1.9.1)"</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># SciPy implements many different numerical algorithms</span>
+<span class="kn">import</span> <span class="nn">scipy</span> <span class="kn">as</span> <span class="nn">sp</span>
+<span class="k">print</span> <span class="s2">"SciPy version:        </span><span class="si">%6.6s</span><span class="s2"> (need at least 0.15.1)"</span> <span class="o">%</span> <span class="n">sp</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># Pandas makes working with data tables easier</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="k">print</span> <span class="s2">"Pandas version:       </span><span class="si">%6.6s</span><span class="s2"> (need at least 0.16.2)"</span> <span class="o">%</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># Module for plotting</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="k">print</span> <span class="s2">"Mapltolib version:    </span><span class="si">%6.6s</span><span class="s2"> (need at least 1.4.1)"</span> <span class="o">%</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># SciKit Learn implements several Machine Learning algorithms</span>
+<span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="k">print</span> <span class="s2">"Scikit-Learn version: </span><span class="si">%6.6s</span><span class="s2"> (need at least 0.16.1)"</span> <span class="o">%</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1"># Requests is a library for getting data from the Web</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="k">print</span> <span class="s2">"requests version:     </span><span class="si">%6.6s</span><span class="s2"> (need at least 2.0.0)"</span> <span class="o">%</span> <span class="n">requests</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c1">#BeautifulSoup is a library to parse HTML and XML documents</span>
+<span class="kn">import</span> <span class="nn">bs4</span>
+<span class="k">print</span> <span class="s2">"BeautifulSoup version:</span><span class="si">%6.6s</span><span class="s2"> (need at least 4.4)"</span> <span class="o">%</span> <span class="n">bs4</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="kn">import</span> <span class="nn">pyquery</span>
+<span class="k">print</span> <span class="s2">"Loaded PyQuery"</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>IPython version:       3.2.0 (need at least 3.0.0)
+Numpy version:        1.10.0 (need at least 1.9.1)
+SciPy version:        0.16.0 (need at least 0.15.1)
+Pandas version:       0.16.2 (need at least 0.16.2)
+Mapltolib version:     1.4.2 (need at least 1.4.1)
+Scikit-Learn version: 0.16.1 (need at least 0.16.1)
+requests version:      2.7.0 (need at least 2.0.0)
+BeautifulSoup version: 4.4.0 (need at least 4.4)
+Loaded PyQuery
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If any of these libraries are missing or out of date, you will need to install them and restart IPython.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Kicking the tires<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Kicking-the-tires">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Lets try some things, starting from very simple, to more complex.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Hello World<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-World">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following is the incantation we like to put at the beginning of every notebook. It loads most of the stuff we will regularly use.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># The %... is an iPython thing, and is not part of the Python language.</span>
+<span class="c1"># In this case we're just telling the plotting library to draw things on</span>
+<span class="c1"># the notebook, instead of on a separate window.</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span> 
+<span class="c1">#this line above prepares IPython notebook for working with matplotlib</span>
+
+<span class="c1"># See all the "as ..." contructs? They're just aliasing the package names.</span>
+<span class="c1"># That way we can call methods like plt.plot() instead of matplotlib.pyplot.plot().</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c1"># imports a fast numerical programming library</span>
+<span class="kn">import</span> <span class="nn">scipy</span> <span class="kn">as</span> <span class="nn">sp</span> <span class="c1">#imports stats functions, amongst other things</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">mpl</span> <span class="c1"># this actually imports matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span> <span class="c1">#allows us easy access to colormaps</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span> <span class="c1">#sets up plotting under plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span> <span class="c1">#lets us handle data as dataframes</span>
+<span class="c1">#sets up pandas table display</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.width'</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_columns'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.notebook_repr_html'</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> <span class="c1">#sets up styles and gives us more plotting options</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Hello matplotlib<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-matplotlib">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The notebook integrates nicely with Matplotlib, the primary plotting package for python. This should embed a figure of a sine wave:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>  <span class="c1">#array of 30 points from 0 to 10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span> <span class="o">*</span> <span class="o">.</span><span class="mi">2</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">'o-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'A sine wave'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Noisy sine'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span> <span class="o">=</span> <span class="s1">'lower right'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"X axis"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Y axis"</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.text.Text at 0x8cf1090&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0Agg==%0A">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If that last cell complained about the <code>%matplotlib</code> line, you need to update IPython to v1.0, and restart the notebook. See the <a href="https://github.com/cs109/content/wiki/Installing-Python">installation page</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>Hello Numpy<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#Hello-Numpy">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Numpy array processing library is the basis of nearly all numerical computing in Python. Here's a 30 second crash course. For more details, consult Chapter 4 of Python for Data Analysis, or the <a href="http://docs.scipy.org/doc/numpy-dev/user/index.html">Numpy User's Guide</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Make a 3 row x 4 column array of random numbers"</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">x</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s2">"Add 1 to every element"</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="n">x</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s2">"Get the element at row 1, column 2"</span>
+<span class="k">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span>
+
+<span class="c1"># The colon syntax is called "slicing" the array. </span>
+<span class="k">print</span> <span class="s2">"Get the first row"</span>
+<span class="k">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s2">"Get every 2nd column of the first row"</span>
+<span class="k">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Make a 3 row x 4 column array of random numbers
+[[ 0.95360068  0.04088182  0.77170502  0.57915134]
+ [ 0.25802318  0.81390016  0.07141479  0.86840551]
+ [ 0.6859231   0.14546962  0.54888066  0.53451581]]
+
+Add 1 to every element
+[[ 1.95360068  1.04088182  1.77170502  1.57915134]
+ [ 1.25802318  1.81390016  1.07141479  1.86840551]
+ [ 1.6859231   1.14546962  1.54888066  1.53451581]]
+
+Get the element at row 1, column 2
+1.07141479029
+
+Get the first row
+[ 1.95360068  1.04088182  1.77170502  1.57915134]
+
+Get every 2nd column of the first row
+[ 1.95360068  1.77170502]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Print the maximum, minimum, and mean of the array. This does <strong>not</strong> require writing a loop. In the code cell below, type <code>x.m&lt;TAB&gt;</code>, to find built-in operations for common array statistics like this</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Max is  "</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="k">print</span> <span class="s2">"Min is  "</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="k">print</span> <span class="s2">"Mean is "</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Max is   1.95360068113
+Min is   1.04088182303
+Mean is  1.52265597549
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Call the <code>x.max</code> function again, but use the <code>axis</code> keyword to print the maximum of each row in x.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ 1.95360068  1.86840551  1.6859231 ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's a way to quickly simulate 500 coin "fair" coin tosses (where the probabily of getting Heads is 50%, or 0.5)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">"number of heads:"</span><span class="p">,</span> <span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>number of heads: 258
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Repeat this simulation 500 times, and use the <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">plt.hist() function</a> to plot a histogram of the number of Heads (1s) in each simulation</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 3 ways to run the simulations</span>
+
+<span class="c1"># loop</span>
+<span class="n">heads</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">500</span><span class="p">):</span>
+    <span class="n">heads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># "list comprehension"</span>
+<span class="n">heads</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">500</span><span class="p">)]</span>
+
+<span class="c1"># pure numpy</span>
+<span class="n">heads</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="n">histogram</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">heads</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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%0A">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">heads</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[11]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(500,)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>The Monty Hall Problem<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#The-Monty-Hall-Problem">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's a fun and perhaps surprising statistical riddle, and a good way to get some practice writing python functions</p>
+<p>In a gameshow, contestants try to guess which of 3 closed doors contain a cash prize (goats are behind the other two doors). Of course, the odds of choosing the correct door are 1 in 3. As a twist, the host of the show occasionally opens a door after a contestant makes his or her choice. This door is always one of the two the contestant did not pick, and is also always one of the goat doors (note that it is always possible to do this, since there are two goat doors). At this point, the contestant has the option of keeping his or her original choice, or swtiching to the other unopened door. The question is: is there any benefit to switching doors? The answer surprises many people who haven't heard the question before.</p>
+<p>We can answer the problem by running simulations in Python. We'll do it in several parts.</p>
+<p>First, write a function called <code>simulate_prizedoor</code>. This function will simulate the location of the prize in many games -- see the detailed specification below:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">simulate_prizedoor</span>
+
+<span class="sd">Generate a random array of 0s, 1s, and 2s, representing</span>
+<span class="sd">hiding a prize between door 0, door 1, and door 2</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">nsim : int</span>
+<span class="sd">    The number of simulations to run</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">sims : array</span>
+<span class="sd">    Random array of 0s, 1s, and 2s</span>
+
+<span class="sd">Example</span>
+<span class="sd">-------</span>
+<span class="sd">&gt;&gt;&gt; print simulate_prizedoor(3)</span>
+<span class="sd">array([0, 0, 2])</span>
+<span class="sd">"""</span>
+
+
+<span class="k">def</span> <span class="nf">simulate_prizedoor</span><span class="p">(</span><span class="n">nsim</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="p">(</span><span class="n">nsim</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, write a function that simulates the contestant's guesses for <code>nsim</code> simulations. Call this function <code>simulate_guess</code>. The specs:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">simulate_guess</span>
+
+<span class="sd">Return any strategy for guessing which door a prize is behind. This</span>
+<span class="sd">could be a random strategy, one that always guesses 2, whatever.</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">nsim : int</span>
+<span class="sd">    The number of simulations to generate guesses for</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    An array of guesses. Each guess is a 0, 1, or 2</span>
+
+<span class="sd">Example</span>
+<span class="sd">-------</span>
+<span class="sd">&gt;&gt;&gt; print simulate_guess(5)</span>
+<span class="sd">array([0, 0, 0, 0, 0])</span>
+<span class="sd">"""</span>
+
+<span class="k">def</span> <span class="nf">simulate_guess</span><span class="p">(</span><span class="n">nsim</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nsim</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, write a function, <code>goat_door</code>, to simulate randomly revealing one of the goat doors that a contestant didn't pick.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">goat_door</span>
+
+<span class="sd">Simulate the opening of a "goat door" that doesn't contain the prize,</span>
+<span class="sd">and is different from the contestants guess</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">prizedoors : array</span>
+<span class="sd">    The door that the prize is behind in each simulation</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    THe door that the contestant guessed in each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">goats : array</span>
+<span class="sd">    The goat door that is opened for each simulation. Each item is 0, 1, or 2, and is different</span>
+<span class="sd">    from both prizedoors and guesses</span>
+
+<span class="sd">Examples</span>
+<span class="sd">--------</span>
+<span class="sd">&gt;&gt;&gt; print goat_door(np.array([0, 1, 2]), np.array([1, 1, 1]))</span>
+<span class="sd">&gt;&gt;&gt; array([2, 2, 0])</span>
+<span class="sd">"""</span>
+
+<span class="k">def</span> <span class="nf">goat_door</span><span class="p">(</span><span class="n">prizedoors</span><span class="p">,</span> <span class="n">guesses</span><span class="p">):</span>
+    
+    <span class="c1">#strategy: generate random answers, and</span>
+    <span class="c1">#keep updating until they satisfy the rule</span>
+    <span class="c1">#that they aren't a prizedoor or a guess</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">prizedoors</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">bad</span> <span class="o">=</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="n">prizedoors</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="n">guesses</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">bad</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">result</span>
+        <span class="n">result</span><span class="p">[</span><span class="n">bad</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">bad</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function, <code>switch_guess</code>, that represents the strategy of always switching a guess after the goat door is opened.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">switch_guess</span>
+
+<span class="sd">The strategy that always switches a guess after the goat door is opened</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">     Array of original guesses, for each simulation</span>
+<span class="sd">goatdoors : array</span>
+<span class="sd">     Array of revealed goat doors for each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">The new door after switching. Should be different from both guesses and goatdoors</span>
+
+<span class="sd">Examples</span>
+<span class="sd">--------</span>
+<span class="sd">&gt;&gt;&gt; print switch_guess(np.array([0, 1, 2]), np.array([1, 2, 1]))</span>
+<span class="sd">&gt;&gt;&gt; array([2, 0, 0])</span>
+<span class="sd">"""</span>
+
+<span class="k">def</span> <span class="nf">switch_guess</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">goatdoors</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">guesses</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">switch</span> <span class="o">=</span> <span class="p">{(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span> <span class="mi">0</span><span class="p">}</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+            <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">guesses</span> <span class="o">==</span> <span class="n">i</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">goatdoors</span> <span class="o">==</span> <span class="n">j</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">mask</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                <span class="k">continue</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">*</span> <span class="n">switch</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)],</span> <span class="n">result</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Last function: write a <code>win_percentage</code> function that takes an array of <code>guesses</code> and <code>prizedoors</code>, and returns the percent of correct guesses</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">"""</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">win_percentage</span>
+
+<span class="sd">Calculate the percent of times that a simulation of guesses is correct</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">-----------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    Guesses for each simulation</span>
+<span class="sd">prizedoors : array</span>
+<span class="sd">    Location of prize for each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">--------</span>
+<span class="sd">percentage : number between 0 and 100</span>
+<span class="sd">    The win percentage</span>
+
+<span class="sd">Examples</span>
+<span class="sd">---------</span>
+<span class="sd">&gt;&gt;&gt; print win_percentage(np.array([0, 1, 2]), np.array([0, 0, 0]))</span>
+<span class="sd">33.333</span>
+<span class="sd">"""</span>
+
+<span class="k">def</span> <span class="nf">win_percentage</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">prizedoors</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="n">guesses</span> <span class="o">==</span> <span class="n">prizedoors</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, put it together. Simulate 10000 games where contestant keeps his original guess, and 10000 games where the contestant switches his door after a  goat door is revealed. Compute the percentage of time the contestant wins under either strategy. Is one strategy better than the other?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">nsim</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="c1">#keep guesses</span>
+<span class="k">print</span> <span class="s2">"Win percentage when keeping original door"</span>
+<span class="k">print</span> <span class="n">win_percentage</span><span class="p">(</span><span class="n">simulate_prizedoor</span><span class="p">(</span><span class="n">nsim</span><span class="p">),</span> <span class="n">simulate_guess</span><span class="p">(</span><span class="n">nsim</span><span class="p">))</span>
+
+<span class="c1">#switch</span>
+<span class="n">pd</span> <span class="o">=</span> <span class="n">simulate_prizedoor</span><span class="p">(</span><span class="n">nsim</span><span class="p">)</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="n">simulate_guess</span><span class="p">(</span><span class="n">nsim</span><span class="p">)</span>
+<span class="n">goats</span> <span class="o">=</span> <span class="n">goat_door</span><span class="p">(</span><span class="n">pd</span><span class="p">,</span> <span class="n">guess</span><span class="p">)</span>
+<span class="n">guess</span> <span class="o">=</span> <span class="n">switch_guess</span><span class="p">(</span><span class="n">guess</span><span class="p">,</span> <span class="n">goats</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">"Win percentage when switching doors"</span>
+<span class="k">print</span> <span class="n">win_percentage</span><span class="p">(</span><span class="n">pd</span><span class="p">,</span> <span class="n">guess</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Win percentage when keeping original door
+33.19
+Win percentage when switching doors
+67.3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Many people find this answer counter-intuitive (famously, PhD mathematicians have incorrectly claimed the result must be wrong. Clearly, none of them knew Python).</p>
+<p>One of the best ways to build intuition about why opening a Goat door affects the odds is to re-run the experiment with 100 doors and one prize. If the game show host opens 98 goat doors after you make your initial selection, would you want to keep your first pick or switch? Can you generalize your simulation code to handle the case of <code>n</code> doors?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>The workflow for homeworks and labs<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#The-workflow-for-homeworks-and-labs">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>getting and working on labs<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#getting-and-working-on-labs">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Lets talk a bit about how labs and sections work in this course:</p>
+<ol>
+<li>Lab Notebooks are made available every Thursday evening.</li>
+<li>Lab Videos (which may not cover everything in the notebooks) are made available every Friday as well</li>
+<li>In sections starting Monday morning, and running upto the next Friday, your TA will present part of the lab to you. You ought to have looked at and perhaps tried the lab over the previous weekend, and your section might reach a consensus on what you'd like your TF to focus on: please communicate this.</li>
+</ol>
+<p>(Sections are 2 hours long. The first hour will be spent going over the lab, while the second if an office hour, where you can ask your TA questions about the homework, the lectures, the subject matter, and even the lab).</p>
+<p>The labs will be made available on public github repositories, with naming schemes like <code>cs109/2015lab1</code>.</p>
+<p>This is how you ought to work with them (our github tutorial has an example of this process on the <code>cs109/testing</code> repository):</p>
+<ol>
+<li>First fork the lab from the github web interface. For example, the first lab is at: <a href="https://github.com/cs109/2015lab1">https://github.com/cs109/2015lab1</a> . The fork button is at the upper right corner of the page. Press it.</li>
+<li>When it asks you where to fork the lab, choose your own github userid. The web interface will then take you to the web page for your fork. Mine is at: <a href="https://github.com/rahuldave/2015lab1">https://github.com/rahuldave/2015lab1</a> .</li>
+<li>Now look for the clone url at the bottom right of the page. If you set up your ssh keys, use the ssh url, else use the https url. Mine are <code>git@github.com:rahuldave/2015lab1.git</code> and <code>https://github.com/rahuldave/2015lab1.git</code> respectively. </li>
+<li>Clone your fork down to your machine by obtaining a terminal (<code>/Applications/Utilities/Terminal.app</code> or equivalent on mac and <code>git-bash.exe</code> on windows). Change (<code>cd</code>) into an appropriate folder and clone by doing <code>git clone url</code> where the <code>url</code> is the one in step 3.</li>
+<li>Add a remote for the original repository that you forked from. We'll call this remote <code>course</code>. The command for this, for example, for the first lab is: <code>git remote add course git@github.com:cs109/2015lab1.git</code> or <code>git remote add course https://github.com/cs109/2015lab1.git</code>
+</li>
+<li>Now you have a local repository. Start the ipython notebook in the repository and run the labs. DO NOT run the notebooks ending in <code>_original.ipynb</code>. These are simply copies of the labs. We made these copies so that you can update them from our <code>course</code> remote in case we make any changes.</li>
+</ol>
+<p>For Lab 1 I'd start with pythonpandas, followed by babypython, and finally git. The git notebook can be run under the ipython notebook. But the git commands can also be run directly on a terminal, which is probably the best place to do them...you can keep the notebook on the side to read as you follow along). So after once having read the tutorial, as described earlier, you now get to work through it.</p>
+<p>When you follow along, you can add in your own notes, and try your own variations. As you are doing this, dont forget to continue doing the "add/commit/push" cycle, so that you save and version your changes, and push them to your fork. This typically looks like:</p>
+
+<pre><code>- git add .
+- git commit -a
+- git push
+
+</code></pre>
+<p>In case we make changes, you can incorporate them into your repo by doing: <code>git fetch course; git checkout course/master -- labname_original.ipynb</code> where <code>labname.ipynb</code> is the lab in question. An "add/commit/push" cycle will make sure these changes go into your fork as well. If you intend to work on the changed file, simply copy the file to another one and work on it. Or you could make a new branch. Remember that this fork is YOUR repository, and you can do to it what you like.</p>
+<p>The diagram below should help elucidate the above and serve as a command cheat-sheet.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="./cs109gitflow3.png" alt="homework"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>getting and submitting homework<a class="anchor-link" href="https://render.githubusercontent.com/view/ipynb?commit=850463e4fadc169668dd7a992bdf31add21217f0&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f63733130392f323031356c6162312f383530343633653466616463313639363638646437613939326264663331616464323132313766302f6877302e6970796e62&amp;nwo=cs109%2F2015lab1&amp;path=hw0.ipynb&amp;repository_id=41822876&amp;repository_type=Repository#getting-and-submitting-homework">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To make <code>hw0.ipynb</code> easily accessible, we added it to the public lab repo, so that you can read it even without having a github account. (Otherwise we would have a chicken and egg problem.). This is because our homework repository is private, and we have set it up so that your repositories are private as well.</p>
+<p>Nevertheless, we want you to get acquainted with the workflow you must execute in order to obtain and submit homeworks.</p>
+<p>Let me first describe the steps by which you gain access to the homework.</p>
+<ol>
+<li>At the beginning of this document you were asked to obtain a github id and enter it in the mandatory survey. We will use this github id to construct a homework repository for you with read-write access, and give you access to our read-only homework repository. You will be added to a github organization <code>cs109-students</code>.</li>
+<li>Our read-only repository is <code>cs109-students/2015hw</code>. All students have read-only access to this repository. It will serve the job of the <code>course</code> remote, like above. Any changes after the homework has gone out will be made here.</li>
+<li>You will have your own read-write repository under the <code>cs109-students</code> organization, which will be of the form <code>cs109-students/userid-2015hw</code>. Only you and the cs109 staff have access to this repository, thus ensuring the privacy of your homework.</li>
+<li>When each homework is released, we will create a <strong>branch</strong> on your remote repository, <code>cs109-students/userid-2015hw</code>. The branches are, unimaginatively named: <code>hw0</code>, <code>hw1</code>,...,<code>hw5</code>. (For the curious, the way this works is by us creating one remote per student for a local clone of our <code>cs109-students/2015hw</code> repository, and pushing the new branch to it. We only push to a new branch each time as we dont want to be messing with a branch you have already worked on.). There is <code>master</code> branch too, which will have some instructions, but nothing very exciting. You will never work on this branch.</li>
+</ol>
+<p>So now, how to you obtain and submit the homework? You wont be forking here.</p>
+<ol>
+<li>You first make a clone of your repository. From the terminal, you issue the command: <code>git clone git@github.com:cs109-students/userid-2015hw.git</code> (for ssh users) or <code>git clone https://github.com/cs109-students/userid-2015hw.git</code> (for https users). Substitute your own userid for <code>userid</code>.</li>
+<li>Next you add a remote <code>course</code> to track the read-only "guru" repository. The command for this is: <code>git remote add course git@github.com:cs109-students/2015hw.git</code> or <code>git remote add course https://github.com/cs109-students/2015hw.git</code>. This well help to incorporate any changes, just like above.</li>
+<li>Your clone will come with a <code>master</code> branch, and perhaps a <code>hw0</code> branch. In either case you should first do <code>git fetch origin hw0</code>, which fetches from <em>your</em> remote repository on github the <code>hw0</code> branch. Then you issue <code>git checkout -b hw0 origin/hw0</code>. This command makes a new local branch <code>hw0</code> on your machine which tracks the <code>hw0</code> branch on your remote.</li>
+<li>You are now in the <code>hw0</code> branch. This is where you will work on homework 0. Start the ipython notebook in the repository and run the homework. The file you will use is <code>hw0.ipynb</code>. DO NOT run the notebook ending in <code>_original.ipynb</code>. These are simply copies of the homework. We made these copies so that you can update them from our <code>course</code> remote in case we make any changes. You will now engage in the "add/commit/push" cycle as described above. (The <code>push</code> will only push to the remote <code>hw0</code> branch.)</li>
+<li>We'll grade the last commit you make before the homework deadline. We will be looking for the file <code>hw0.ipynb</code>. (In actuality we wont grade homework 0 but check that you submitted it. But we will be using this mechanism to grade the homeworks from homework 1 onwards.)</li>
+<li>When we are ready to send out homework 1 to you, we will create a new branch on your remote repository <code>git@github.com:cs109-students/userid-2015hw.git</code> on github with the name <code>hw1</code>. You will now repeat the process from step 3 onwards: <code>git fetch origin hw1</code> followed by <code>git checkout -b hw1 origin/hw1</code>. Then you work on the <code>hw1</code> branch, and engage in the "add/commit/push" cycle by running <code>hw1.ipynb</code>. And so on...</li>
+</ol>
+<p>Once again, in case we make changes, you can incorporate them into your repo by doing: <code>git fetch course; git checkout course/hw0 -- hw0_original.ipynb</code>. An "add/commit/push" cycle will make sure these changes go into your fork as well. If you intend to work on the changed file <code>hw0_original.ipynb</code>, simply copy the file to <code>hw0.ipynb</code> and work on it.</p>
+<p>Remember that we will be looking for files <code>hw0.ipynb</code>, <code>hw1.ipynb</code>,...,<code>hw5.ipynb</code> as the semester goes on.</p>
+<p>This process is summarized in the diagram below.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="./cs109gitflow2.png" alt="homework"></p>
+
+</div>
+</div>
+</div>
+ 
+
+</div>
+
+  </div>
+
+  
+
+
+
+</body></html>
